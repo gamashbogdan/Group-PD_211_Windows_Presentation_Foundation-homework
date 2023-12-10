@@ -1,1 +1,1 @@
-# Group-PD_211_Windows_Presentation_Foundation-homework
+# Домашні завдання по Windows Presentation Foundation
