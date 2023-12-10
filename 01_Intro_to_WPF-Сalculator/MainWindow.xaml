@@ -1,0 +1,46 @@
+﻿<Window x:Class="_01_Intro_to_WPF_Сalculator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_01_Intro_to_WPF_Сalculator"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="500">
+    <Grid Name="GroupButton" Margin="4">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <TextBox Name="TextBox" Grid.Row="0" Grid.ColumnSpan="4" FontSize="18"/>
+        <Button Margin="3" Grid.Row="1" Grid.Column="0" FontSize="20">(</Button>
+        <Button Margin="3" Grid.Row="1" Grid.Column="1" FontSize="20">)</Button>
+        <Button Margin="3" Grid.Row="1" Grid.Column="2" FontSize="20">C</Button>
+        <Button Margin="3" Grid.Row="1" Grid.Column="3" FontSize="20">X</Button>
+        <Button Margin="3" Grid.Row="2" Grid.Column="0" FontSize="20">1</Button>
+        <Button Margin="3" Grid.Row="2" Grid.Column="1" FontSize="20">2</Button>
+        <Button Margin="3" Grid.Row="2" Grid.Column="2" FontSize="20">3</Button>
+        <Button Margin="3" Grid.Row="2" Grid.Column="3" FontSize="20">+</Button>
+        <Button Margin="3" Grid.Row="3" Grid.Column="0" FontSize="20">4</Button>
+        <Button Margin="3" Grid.Row="3" Grid.Column="1" FontSize="20">5</Button>
+        <Button Margin="3" Grid.Row="3" Grid.Column="2" FontSize="20">6</Button>
+        <Button Margin="3" Grid.Row="3" Grid.Column="3" FontSize="20">-</Button>
+        <Button Margin="3" Grid.Row="4" Grid.Column="0" FontSize="20">7</Button>
+        <Button Margin="3" Grid.Row="4" Grid.Column="1" FontSize="20">8</Button>
+        <Button Margin="3" Grid.Row="4" Grid.Column="2" FontSize="20">9</Button>
+        <Button Margin="3" Grid.Row="4" Grid.Column="3" FontSize="20">*</Button>
+        <Button Margin="3" Grid.Row="5" Grid.Column="0" FontSize="20">.</Button>
+        <Button Margin="3" Grid.Row="5" Grid.Column="1" FontSize="20">0</Button>
+        <Button Margin="3" Grid.Row="5" Grid.Column="2" FontSize="20">=</Button>
+        <Button Margin="3"  Grid.Row="5" Grid.Column="3" FontSize="20">/</Button>
+    </Grid>
+</Window>
