@@ -36,7 +36,7 @@ namespace _01_Intro_to_WPF_Сalculator
         {
             try
             {
-                string textButton = ((Button)e.OriginalSource).Content.ToString()!;
+               string textButton = ((Button)e.OriginalSource).Content.ToString()!;
                 if (textButton == "C")
                 {
                     TextBox.Clear();
