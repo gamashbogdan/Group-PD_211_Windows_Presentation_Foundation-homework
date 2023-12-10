@@ -1,0 +1,32 @@
+﻿<Window x:Class="_03_Controls.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_03_Controls"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="600">
+    <DockPanel LastChildFill="False">
+        <DockPanel DockPanel.Dock="Top">
+            <Slider Name="sliterСomplexity" Margin="5" Width="382" Height="40" Minimum="1" Maximum="4" TickFrequency="1" TickPlacement="BottomRight" Foreground="Black" IsSnapToTickEnabled="True"/>
+            <Button DockPanel.Dock="Left" Click="ButtonStart_Click" Height="30" Width="70" FontSize="20" Margin="10" Background="#FF2DEE2D">Start</Button>
+            <Button DockPanel.Dock="Right" Click="ButtonStop_Click" Height="30" Width="70" FontSize="20" Margin="10" Background="#FFF6685D">Stop</Button>
+        </DockPanel>
+        <UniformGrid Name="gridButton" Columns="3" Rows="3" Margin="5" DockPanel.Dock="Top" Height="300">
+            <Button Click="button_Click" Margin="5" FontSize="20"></Button>
+            <Button Click="button_Click" Margin="5" FontSize="20"></Button>
+            <Button Click="button_Click" Margin="5" FontSize="20"></Button>
+            <Button Click="button_Click" Margin="5" FontSize="20"></Button>
+            <Button Click="button_Click" Margin="5" FontSize="20"></Button>
+            <Button Click="button_Click" Margin="5" FontSize="20"></Button>
+            <Button Click="button_Click" Margin="5" FontSize="20"></Button>
+            <Button Click="button_Click" Margin="5" FontSize="20"></Button>
+            <Button Click="button_Click" Margin="5" FontSize="20"></Button>
+        </UniformGrid>
+        <StatusBar DockPanel.Dock="Bottom">
+            <Label Name ="lamelTime" Height="Auto"/>
+            <Label Name ="lamelTimeNow" Width="Auto"></Label>
+            <ProgressBar Name ="progresBarTime" Width="200" Height="20" Minimum="0"/>
+        </StatusBar>
+    </DockPanel>
+</Window>
