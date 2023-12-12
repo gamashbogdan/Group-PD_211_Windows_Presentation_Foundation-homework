@@ -5,16 +5,21 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:_02_Containers_Layout_Positions"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <DockPanel LastChildFill="False">
+        Title="MainWindow" Height="450" Width="800" Background="#FFDAFBFF">
+    <DockPanel LastChildFill="True">
         <DockPanel DockPanel.Dock="Top">
-            <Button DockPanel.Dock="Left" Width="100" Height="30" ></Button>
-            <Button DockPanel.Dock="Left" Width="100" Height="30"></Button>
-            <Button DockPanel.Dock="Right" Width="100" Height="30"></Button>
-            <Button DockPanel.Dock="Right" Width="100" Height="30" HorizontalAlignment="Right"></Button>
+            <Button DockPanel.Dock="Left" Width="100" Height="30" Background="#FF96C7F1" FontFamily="Arial Black">12.12.2023</Button>
+            <Button DockPanel.Dock="Left" Width="100" Height="30" Background="#FF96C7F1" FontFamily="Arial Black">18:00</Button>
+            <Button DockPanel.Dock="Right" Width="100" Height="30" FontFamily="Arial Black" Background="#FFEEF197">Програміст</Button>
+            <Button DockPanel.Dock="Right" Width="100" Height="30" HorizontalAlignment="Right" FontFamily="Arial Black" Background="#FFEEF197">Безробітний</Button>
         </DockPanel>
         <Label DockPanel.Dock="Top" FontSize="20" HorizontalAlignment="Center">Rivne News</Label>
-        <Grid DockPanel.Dock="Top">
+        <DockPanel DockPanel.Dock="Bottom">
+            <Button DockPanel.Dock="Right" Width="120" Height="30" FontFamily="Bahnschrift" Background="#FF96C7F1">Продакшен Студіо</Button>
+            <Button DockPanel.Dock="Right" Width="100" Height="30" FontFamily="Bahnschrift" Background="#FF96C7F1">Богдан</Button>
+            <Button DockPanel.Dock="Right" Width="100" Height="30" Background="#FFEBDE9F" HorizontalAlignment="Right" FontFamily="Bahnschrift" FontSize="16">Рівне</Button>
+        </DockPanel>
+        <Grid DockPanel.Dock="Top" >
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="1*"></ColumnDefinition>
                 <ColumnDefinition Width="1*"></ColumnDefinition>
@@ -24,23 +29,52 @@
                 <RowDefinition Height="1*"></RowDefinition>
             </Grid.RowDefinitions>
             <StackPanel Grid.Column="0">
-                    <Button Width="150" Height="50"></Button>
-                    <Button Width="150" Height="50"></Button>
-                    <Button Width="150" Height="50"></Button>
-                    <Button DockPanel.Dock="Left" Width="150" Height="50"></Button>
+                <Button Width="265" Height="84" Background="#FFFAE4E4"/>
+                <Button Width="265" Height="84" Background="#FFFAE4E4"/>
+                <Button Width="265" Height="84" Background="#FFFAE4E4"></Button>
+                <Button Width="265" Height="85" Background="#FFFAE4E4"></Button>
             </StackPanel>
-            
+            <Grid Grid.Column="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="2*"></ColumnDefinition>
+                    <ColumnDefinition Width="2*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="4*"></RowDefinition>
+                    <RowDefinition Height="1*"></RowDefinition>
+                    <RowDefinition Height="1*"></RowDefinition>
+                    <RowDefinition Height="3*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Button Grid.Row="0" Grid.Column="0" Background="#FFFAE4E4">
+                    <Image Source="IMG/Men.png"></Image>
+                </Button>
+                <Button Grid.Row="0" Grid.Column="2" Background="#FFFAE4E4">
+                    <Image Source="IMG/Men2.jpg"></Image>
+                </Button>
+                <Button Grid.Row="1" Grid.Column="0" Background="#FFFAE4E4"></Button>
+                <Button Grid.Row="1" Grid.Column="1" Background="#FFFAE4E4"></Button>
+                <Button Grid.Row="2" Grid.Column="0" Background="#FFFAE4E4"></Button>
+                <Button Grid.Row="2" Grid.Column="1" Background="#FFFAE4E4"></Button>
+                <WrapPanel Grid.Row="3" Grid.Column="0">
+                    <Button Height="37" Width="150" Background="#FFFAE4E4"/>
+                    <Button Height="35" Width="150" Background="#FFFAE4E4"/>
+                    <Button Height="40" Width="150" Background="#FFFAE4E4"/>
+                </WrapPanel>
+                <WrapPanel Grid.Row="3" Grid.Column="1">
+                    <Image Source="IMG/Men3.jpg"></Image>
+                    <Button Height="35" Width="150" Background="#FFFAE4E4"/>
+                    <Button Height="40" Width="150" Background="#FFFAE4E4"/>
+                    <Button Height="40" Width="143" Background="#FFFAE4E4"/>
+                </WrapPanel>
+            </Grid>
             <StackPanel Grid.Column="2">
-                <Button Width="150" Height="50"></Button>
-                <Button Width="150" Height="50"></Button>
-                <Button Width="150" Height="50"></Button>
-                <Button Width="150" Height="50"></Button>
+                <Button Width="265" Height="85" Background="#FFFAE4E4"></Button>
+                <Button Width="265" Height="70" Background="#FFFAE4E4"></Button>
+                <Button Width="265" Height="30" Background="#FFFAE4E4"></Button>
+                <Button Width="265" Height="66" Background="#FFFAE4E4"></Button>
+                <Button Width="265" Height="87" Background="#FFFAE4E4"></Button>
             </StackPanel>
         </Grid>
-        <DockPanel DockPanel.Dock="Bottom">
-            <Button DockPanel.Dock="Right" Width="100" Height="30" ></Button>
-            <Button DockPanel.Dock="Right" Width="100" Height="30"></Button>
-            <Button DockPanel.Dock="Right" Width="100" Height="30" HorizontalAlignment="Right"></Button>
-        </DockPanel>
+
     </DockPanel>
 </Window>

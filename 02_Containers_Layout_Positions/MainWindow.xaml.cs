@@ -23,6 +23,7 @@ namespace _02_Containers_Layout_Positions
         public MainWindow()
         {
             InitializeComponent();
+            
         }
     }
 }
