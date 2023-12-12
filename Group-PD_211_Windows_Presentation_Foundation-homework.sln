@@ -5,9 +5,11 @@ VisualStudioVersion = 17.7.34302.85
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01_Intro_to_WPF-Сalculator", "01_Intro_to_WPF-Сalculator\01_Intro_to_WPF-Сalculator.csproj", "{C207B48C-D842-4EF0-B7C1-A8B5CD886EE0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02_Containers_Layout_Positions", "02_Containers_Layout_Positions\02_Containers_Layout_Positions.csproj", "{23364331-3241-4967-A44A-42907690D7BE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02_Containers_Layout_Positions", "02_Containers_Layout_Positions\02_Containers_Layout_Positions.csproj", "{23364331-3241-4967-A44A-42907690D7BE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03_Controls", "03_Controls\03_Controls.csproj", "{C17C5C8B-5705-46C6-921D-2CB4FF646E50}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03_Controls", "03_Controls\03_Controls.csproj", "{C17C5C8B-5705-46C6-921D-2CB4FF646E50}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04_List_Controls_Collection_Binding", "04_List_Controls_Collection_Binding\04_List_Controls_Collection_Binding.csproj", "{F95AB718-915A-4A3D-8E0D-3B2444B4C30E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{C17C5C8B-5705-46C6-921D-2CB4FF646E50}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C17C5C8B-5705-46C6-921D-2CB4FF646E50}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C17C5C8B-5705-46C6-921D-2CB4FF646E50}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F95AB718-915A-4A3D-8E0D-3B2444B4C30E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F95AB718-915A-4A3D-8E0D-3B2444B4C30E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F95AB718-915A-4A3D-8E0D-3B2444B4C30E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F95AB718-915A-4A3D-8E0D-3B2444B4C30E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
