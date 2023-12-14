@@ -25,28 +25,14 @@ namespace _04_List_Controls_Collection_Binding
 			get { return surname; }
 			set { surname = value; }
 		}
-        [RegularExpression(@"^\+38-0\d{2}-\d{3}-\d{2}-\d{2}$|^\+380\d{9}$", ErrorMessage = "EROR 1\nIncorrect phone number input format!\nTry this format (+38-011-222-33-44-) or this one (+380123456789)")]
 		private string phone;
+        [RegularExpression(@"^\+38-0\d{2}-\d{3}-\d{2}-\d{2}$|^\+380\d{9}$", ErrorMessage = "Incorrect phone number input format!\nTry this format (+38-011-222-33-44-) or this one (+380123456789)")]
         public string Phone
         {
             get { return phone; }
             set
-            {
-                var validationContext = new ValidationContext(this) { MemberName = nameof(Phone) };
-                var validationResults = new List<ValidationResult>();
-
-                if (!Validator.TryValidateProperty(value, validationContext, validationResults))
-                {
-                    foreach (var validationResult in validationResults)
-                    {
-                        MessageBox.Show(validationResult.ErrorMessage);
-                    }
-                }
-                else
-                {
-                    phone = value;
-                }
-            }
+            {phone = value;}
+            
         }
         private string country;
         public string Country

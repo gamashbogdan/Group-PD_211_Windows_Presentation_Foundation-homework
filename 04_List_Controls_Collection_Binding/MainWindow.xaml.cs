@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.ComponentModel.DataAnnotations;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -14,6 +15,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using ValidationResult = System.ComponentModel.DataAnnotations.ValidationResult;
 
 namespace _04_List_Controls_Collection_Binding
 {
@@ -114,12 +116,26 @@ namespace _04_List_Controls_Collection_Binding
                 correctAnswerCounter += 1;
                 country = comboBoxCountry.SelectedItem.ToString()!;
             }    
+                var PhoneBook = new PhoneBook() { Name = name, Surname = surname, Phone = phone, Country = country };
+                var results = new List<ValidationResult>();
+                var context = new ValidationContext(PhoneBook);
+                bool isValid = Validator.TryValidateObject(PhoneBook, context, results, true);
             if(correctAnswerCounter == 4){
-                phoneBooks.Add(new PhoneBook() { Name = name, Surname = surname, Phone = phone, Country = country});
-                textBoxName.Text = "";
-                textBoxSurname.Text = "";
-                textBoxPhone.Text = "";
-                comboBoxCountry.Text = "";
+                if (!isValid)
+                {
+                    foreach (ValidationResult error in results)
+                    {
+                        MessageBox.Show(error.MemberNames.FirstOrDefault()+ ": "+error.ErrorMessage,"Eror 1", MessageBoxButton.OK, MessageBoxImage.Warning);
+                    }
+                }
+                else
+                {
+                    phoneBooks.Add(PhoneBook);
+                    textBoxName.Text = "";
+                    textBoxSurname.Text = "";
+                    textBoxPhone.Text = "";
+                    comboBoxCountry.Text = "";
+                }
             }
         }
         private void buttonRemove_Click(object sender, RoutedEventArgs e)
