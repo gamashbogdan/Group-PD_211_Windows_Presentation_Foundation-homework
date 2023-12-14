@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02_Containers_Layout_Positi
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03_Controls", "03_Controls\03_Controls.csproj", "{C17C5C8B-5705-46C6-921D-2CB4FF646E50}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04_List_Controls_Collection_Binding", "04_List_Controls_Collection_Binding\04_List_Controls_Collection_Binding.csproj", "{F95AB718-915A-4A3D-8E0D-3B2444B4C30E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04_List_Controls_Collection_Binding", "04_List_Controls_Collection_Binding\04_List_Controls_Collection_Binding.csproj", "{F95AB718-915A-4A3D-8E0D-3B2444B4C30E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05_Data_Bindings_Data_Context", "05_Data_Bindings_Data_Context\05_Data_Bindings_Data_Context.csproj", "{9F944F85-680E-4D32-BA83-78415631EEB0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{F95AB718-915A-4A3D-8E0D-3B2444B4C30E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F95AB718-915A-4A3D-8E0D-3B2444B4C30E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F95AB718-915A-4A3D-8E0D-3B2444B4C30E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F944F85-680E-4D32-BA83-78415631EEB0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F944F85-680E-4D32-BA83-78415631EEB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F944F85-680E-4D32-BA83-78415631EEB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F944F85-680E-4D32-BA83-78415631EEB0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
