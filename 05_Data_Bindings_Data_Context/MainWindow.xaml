@@ -12,7 +12,12 @@
             <ColumnDefinition Width="10"></ColumnDefinition>
             <ColumnDefinition Width="1*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
-        <ListBox Name ="listBox" MouseDoubleClick="listBoxShow_DoubleClick" ItemsSource="{Binding Path=PhoneBooks}" Grid.Column="0" FontFamily="Cambria" FontSize="20" />
+        <ListBox Name ="listBox"
+                 MouseDoubleClick="listBoxShow_DoubleClick"
+                 ItemsSource="{Binding Path=PhoneBooks}"
+                 SelectedItem="{Binding SelectedPhoneBook}"
+                 Grid.Column="0" FontFamily="Cambria" FontSize="20"
+                 />
         <GridSplitter Grid.Column="1" Width="5" VerticalAlignment="Stretch" HorizontalAlignment="Center"/>
         <Grid Name="gridNested" Grid.Column="2" >
             <Grid.RowDefinitions>
