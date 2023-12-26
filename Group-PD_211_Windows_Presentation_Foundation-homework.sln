@@ -13,7 +13,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04_List_Controls_Collection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "05_Data_Bindings_Data_Context", "05_Data_Bindings_Data_Context\05_Data_Bindings_Data_Context.csproj", "{9F944F85-680E-4D32-BA83-78415631EEB0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06_MVVM_Pattern_Commands", "06_MVVM_Pattern_Commands\06_MVVM_Pattern_Commands.csproj", "{D2AC5297-AA56-4FBD-9E6A-570751963B13}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "06_MVVM_Pattern_Commands", "06_MVVM_Pattern_Commands\06_MVVM_Pattern_Commands.csproj", "{D2AC5297-AA56-4FBD-9E6A-570751963B13}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

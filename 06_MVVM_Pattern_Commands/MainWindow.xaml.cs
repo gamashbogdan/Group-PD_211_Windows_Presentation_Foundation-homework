@@ -234,70 +234,70 @@ namespace _06_MVVM_Pattern_Commands
             }
         }
 
-        private void buttonAdd_Click(object sender, RoutedEventArgs e)
-        {
-            string name = "", surname = "", phone = "", country = "";
-            int correctAnswerCounter = 0;
-            if (textBoxName.Text.Length == 0)
-            {
-                MessageBox.Show("Enter a name", "Eror 2", MessageBoxButton.OK, MessageBoxImage.Warning);
-            }
-            else
-            {
-                correctAnswerCounter += 1;
-                name = textBoxName.Text;
-            }
-            if (textBoxSurname.Text.Length == 0)
-            {
-                MessageBox.Show("Enter a surna", "Eror 3", MessageBoxButton.OK, MessageBoxImage.Warning);
-            }
-            else
-            {
-                correctAnswerCounter += 1;
-                surname = textBoxSurname.Text;
-            }
-            if (textBoxPhone.Text.Length == 0)
-            {
-                MessageBox.Show("Enter a phone", "Eror 4", MessageBoxButton.OK, MessageBoxImage.Warning);
-            }
-            else
-            {
-                correctAnswerCounter += 1;
-                phone = textBoxPhone.Text;
-            }
-            if (comboBoxCountry.SelectedItem == null)
-            {
-                MessageBox.Show("Choose a country", "Eror 5", MessageBoxButton.OK, MessageBoxImage.Warning);
-            }
-            else
-            {
-                correctAnswerCounter += 1;
-                country = comboBoxCountry.SelectedItem.ToString()!;
-            }
-            var PhoneBook = new PhoneBook() { Name = name, Surname = surname, Phone = phone, Country = country };
-            var results = new List<ValidationResult>();
-            var context = new ValidationContext(PhoneBook);
-            bool isValid = Validator.TryValidateObject(PhoneBook, context, results, true);
-            if (correctAnswerCounter == 4)
-            {
-                if (!isValid)
-                {
-                    foreach (ValidationResult error in results)
-                    {
-                        MessageBox.Show(error.MemberNames.FirstOrDefault() + ": " + error.ErrorMessage, "Eror 1", MessageBoxButton.OK, MessageBoxImage.Warning);
-                    }
-                }
-                else
-                {
-                    PhoneBook newPhoneBook = new PhoneBook() { Name = name, Surname = surname, Phone = phone, Country = country };
-                    viewModel.AddPhoneBook(newPhoneBook);
-                    textBoxName.Text = "";
-                    textBoxSurname.Text = "";
-                    textBoxPhone.Text = "";
-                    comboBoxCountry.Text = "";
-                }
-            }
-        }
+        //private void buttonAdd_Click(object sender, RoutedEventArgs e)
+        //{
+        //    string name = "", surname = "", phone = "", country = "";
+        //    int correctAnswerCounter = 0;
+        //    if (textBoxName.Text.Length == 0)
+        //    {
+        //        MessageBox.Show("Enter a name", "Eror 2", MessageBoxButton.OK, MessageBoxImage.Warning);
+        //    }
+        //    else
+        //    {
+        //        correctAnswerCounter += 1;
+        //        name = textBoxName.Text;
+        //    }
+        //    if (textBoxSurname.Text.Length == 0)
+        //    {
+        //        MessageBox.Show("Enter a surna", "Eror 3", MessageBoxButton.OK, MessageBoxImage.Warning);
+        //    }
+        //    else
+        //    {
+        //        correctAnswerCounter += 1;
+        //        surname = textBoxSurname.Text;
+        //    }
+        //    if (textBoxPhone.Text.Length == 0)
+        //    {
+        //        MessageBox.Show("Enter a phone", "Eror 4", MessageBoxButton.OK, MessageBoxImage.Warning);
+        //    }
+        //    else
+        //    {
+        //        correctAnswerCounter += 1;
+        //        phone = textBoxPhone.Text;
+        //    }
+        //    if (comboBoxCountry.SelectedItem == null)
+        //    {
+        //        MessageBox.Show("Choose a country", "Eror 5", MessageBoxButton.OK, MessageBoxImage.Warning);
+        //    }
+        //    else
+        //    {
+        //        correctAnswerCounter += 1;
+        //        country = comboBoxCountry.SelectedItem.ToString()!;
+        //    }
+        //    var PhoneBook = new PhoneBook() { Name = name, Surname = surname, Phone = phone, Country = country };
+        //    var results = new List<ValidationResult>();
+        //    var context = new ValidationContext(PhoneBook);
+        //    bool isValid = Validator.TryValidateObject(PhoneBook, context, results, true);
+        //    if (correctAnswerCounter == 4)
+        //    {
+        //        if (!isValid)
+        //        {
+        //            foreach (ValidationResult error in results)
+        //            {
+        //                MessageBox.Show(error.MemberNames.FirstOrDefault() + ": " + error.ErrorMessage, "Eror 1", MessageBoxButton.OK, MessageBoxImage.Warning);
+        //            }
+        //        }
+        //        else
+        //        {
+        //            PhoneBook newPhoneBook = new PhoneBook() { Name = name, Surname = surname, Phone = phone, Country = country };
+        //            viewModel.AddPhoneBook(newPhoneBook);
+        //            textBoxName.Text = "";
+        //            textBoxSurname.Text = "";
+        //            textBoxPhone.Text = "";
+        //            comboBoxCountry.Text = "";
+        //        }
+        //    }
+        //}
         
 
 
